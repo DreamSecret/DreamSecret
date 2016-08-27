@@ -17,8 +17,8 @@
       echo"<script>alert('Error');</script>";
    }
 
-   function add_account($id,$organization,$first_name,$last_name,$codename,$display_picture,$address,$municipality){
-      $query = "insert into accounts(organization,first_name,last_name,codename,display_picture,address,municipality) values($organization,$first_name,$last_name,$codename,$display_picture,$address)"
+   function add_account($id,$organization,$first_name,$last_name,$codename,$display_picture,$address,$municipality,$password){
+      $query = "insert into accounts(organization,first_name,last_name,codename,display_picture,address,municipality,password) values($organization,$first_name,$last_name,$codename,$display_picture,$address,$password)";
       mysqli_query($conn,$query);
    }
 ?>
