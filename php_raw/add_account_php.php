@@ -16,4 +16,9 @@
    else{
       echo"<script>alert('Error');</script>";
    }
+
+   function add_account($id,$organization,$first_name,$last_name,$codename,$display_picture,$address,$municipality){
+      $query = "insert into accounts(organization,first_name,last_name,codename,display_picture,address,municipality) values($organization,$first_name,$last_name,$codename,$display_picture,$address)"
+      mysqli_query($query);
+   }
 ?>
