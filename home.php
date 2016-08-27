@@ -65,7 +65,7 @@
 	.form-content {
 		width: 80%;
 		background-color: rgb(200,200,200);
-		clear: both;
+		overflow: auto;
 		padding: 5%;
 		margin: 5%;
 	}
@@ -98,10 +98,11 @@
 	}
 
 	.form-content textarea {
-		width: 100%;
+		width: 90%;
 		height: 100px;
 		border-radius: 8px;
 		border: transparent; 
+		padding: 5%;
 	}
 
 	.form-content input[type="date"]{
@@ -109,6 +110,7 @@
 		height: 30px;
 		border-radius: 8px;
 		text-align: center;
+		border: transparent;
 	}
 
 	.form-content input[type="file"]{
@@ -117,11 +119,20 @@
 		border-radius: 8px;
 	}
 
+	.form-content input[type="submit"]{
+		float: right;
+		border: black;
+		border-radius: 8px;
+		background-color: white;
+		padding: 10px;
+		margin-top: 5px;
+		cursor: pointer;
+	}
+
 	.unresolve-forum {
 		width: 90%;
 		margin: 5%;
 		clear: both;
-
 	}
 
 	.unresolve-forum h1 {
@@ -151,6 +162,13 @@
     width: 100%;
     float: left;
 }
+
+	.selection-forum-content {
+		float: left;
+		width: 100%;
+		border-bottom: 1px solid;
+		padding-bottom: 20px;
+	}
 
 	.right-info {
 		width: 80%;
@@ -196,6 +214,11 @@
 	.info-content {
 		padding-top: 10px;
 		padding-bottom: 10px;
+	}
+
+	.infos #com {
+		color: green;
+		float: right;
 	}
 
 
@@ -250,6 +273,7 @@
 						</tr>
 
 					</table>
+					<input type="submit" value="POST PROBLEM">
 				</form>
 			</div>
 
@@ -272,7 +296,39 @@
 						<span>Nearby Landmark: 711</span>	
 					</div>
 
-					<p>3 Comments</p>
+					<p id = "com">3 Comments</p>
+					</div>
+
+					<div class="picturetake">
+					<img src="img/logomuna.jpg">
+					</div>
+					</div>
+
+
+
+				</div>
+
+			</div>
+
+			<div class="unresolve-forum">
+
+				<div class="selection-forum-content">
+					<div id="procut">
+					<img id="propic" src="img/logomuna.jpg" >
+					</div>
+					<div class="right-info">
+						<div class="infos">
+					<p id = "name">Aldwin B. Labrador</p>
+					<p id = "date">August 26, 2016</p>
+					<p id = "message">May mga nagpuputol po ng halaman dito samen huhu, pahelp naman pooo.</p>
+
+					<div class="info-content">
+						<span>Category: Illegal Logging</span>
+						<span>Location: Manila City</span>
+						<span>Nearby Landmark: 711</span>	
+					</div>
+
+					<p id = "com">3 Comments</p>
 					</div>
 
 					<div class="picturetake">
