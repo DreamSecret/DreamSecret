@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-	
+<?php include('connection.php'); ?>
 <html>
 
 <head>
@@ -189,10 +189,10 @@
 		<div class="form-contain">
 			<form method="POST" action="">
 				<label>Ranger Name:</label>
-				<input type="text" name="rname">
+				<input type="text" name="rname" placeholder="Your last name">
 				<label>Password:</label>
 				<input type="password" name="pass">
-				<p><?php echo $warning; ?></p>
+				<p><?php //echo $warning; ?></p>
 				<input type="submit" value="LOGIN" name="login" style="margin-right: 20px">
 				<input type="submit" value="REGISTER" name="reg" action="register.php">
 
@@ -217,14 +217,23 @@ if(isset($_POST['login'])){
 	$warning="";
 	$name = $_POST['rname'];
 	$pass = $_POST['pass'];
+	
+	$query = "select * from accounts where last_name='$name' and password='$pass'";
+	$queryres = mysqli_query($conn,$query);
 
-	if(($name == "patrick") && ($pass == "pass")){
+	if(mysqli_num_rows($queryres)!=0){
+		echo("<script>alert('Welcome');</script>");
+	}
+	else{
+		echo("<script>alert('Wrong Username or Password');</script>");
+	}
+	/*if(($name == "patrick") && ($pass == "pass")){
 		$warning = "Success!";
 	}
 
 	else{
 		$warning = "* Wrong Password of Username";
-	}
+	}*/
 
 
 }else if(isset($_POST['reg'])){

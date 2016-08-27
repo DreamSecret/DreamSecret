@@ -249,7 +249,6 @@
 							<td><input type="date" name="date"></td>
 						</tr>
 
-
 					</table>
 				</form>
 			</div>
