@@ -8,4 +8,9 @@
    else{
       echo("Error");
    }
+
+   function delete_account($id){
+      $query = "delete from accounts where id=$id";
+      mysqli_query($conn,$query);
+   }
 ?>
