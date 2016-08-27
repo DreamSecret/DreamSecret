@@ -1,5 +1,5 @@
+<?php include('connection.php');include('session.php'); ?>
 <!DOCTYPE HTML>
-	
 <html>
 
 <head>
@@ -273,7 +273,8 @@
 						</tr>
 
 					</table>
-					<input type="submit" value="POST PROBLEM">
+					<input type = "submit" value = "Log Out" name = "btnLogout">
+					<input type="submit" name = "btnSubmit" value="POST PROBLEM">
 				</form>
 			</div>
 
@@ -346,6 +347,23 @@
 
 
 </body>
-
+<?php
+	if(isset($_POST['btnLogout'])){
+		session_unset();session_destroy();
+		echo("<script>window.location='login.php';</script>");
+	}
+	if(isset($_POST['btnSubmit'])){
+	include('php_raw/add_problem_php.php');
+	include('connection.php');
+	$category = $_POST['cat'];
+	$location = $_POST['loc'];
+	$description = $_POST['des'];
+	$name_place = $_POST['loc'];
+	$nearby_landmarks = $_POST['NL'];
+	$photo = $_POST['uploaded-img-vid'];
+	$photo_date = $_POST['date'];
+	add_problem($category,$location,$description,$name_place,$nearby_landmarks,$photo,$photo_date,$_SESSION['user_id']);
+	}
+?>
 
 </html>

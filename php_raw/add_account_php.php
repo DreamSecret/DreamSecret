@@ -1,5 +1,5 @@
 <?php
-   $id=$_POST['id'];
+   /*$id=$_POST['id'];
    $organization=$_POST['organization'];
    $first_name=$_POST['first_name'];
    $last_name=$_POST['last_name'];
@@ -15,10 +15,18 @@
    if(mysqli_query($conn,$query)){}
    else{
       echo"<script>alert('Error');</script>";
-   }
+   }*/
 
-   function add_account($id,$organization,$first_name,$last_name,$codename,$display_picture,$address,$municipality,$password){
+   function add_account($organization,$first_name,$last_name,$codename,$display_picture,$address,$municipality,$password){
+      include("../connection.php");
+      echo("<script>alert('21');</script>");
       $query = "insert into accounts(organization,first_name,last_name,codename,display_picture,address,municipality,password) values($organization,$first_name,$last_name,$codename,$display_picture,$address,$password)";
-      mysqli_query($conn,$query);
+      if(mysqli_query($conn,$query)){
+         echo("<script>alert('Success');</script>");
+      }
+      else{
+         echo("<script>alert('Error');</script>");
+      }
+      
    }
 ?>
