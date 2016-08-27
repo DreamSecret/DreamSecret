@@ -19,4 +19,10 @@
    else{
       
    }
+
+   function edit_problem($id,$category,$location,$description,$name_place,$nearby_landmarks,$photo,$photo_date){
+      $query = "update problem set category=$category,location=$location,description=$description,name_place=$name_place,nearby_landmarks=$nearby_landmarks,photo=$photo,$photo_date";
+
+      mysqli_query($conn,$query);
+   }
 ?>
