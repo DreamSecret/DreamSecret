@@ -11,4 +11,5 @@
 
    $query = "insert into resolved_problem($fields) values($values)";
    mysqli_query($conn,$query);
+   //sample comment
 ?>
