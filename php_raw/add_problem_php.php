@@ -18,4 +18,9 @@
    else{
       
    }
+
+   function add_problem($category,$location,$description,$name_place,$nearby_landmarks,$photo,$photo_date){
+      $query = "insert into problem(category,location,description,name_place,nearby_landmarks,photo,photo_date,date_uploaded) values($category,$location,$description,$name_place,$nearby_landmarks,$photo,$photo_date,now())";
+      mysqli_query($conn,$query);
+   }
 ?>
