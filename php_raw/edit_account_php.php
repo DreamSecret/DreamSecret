@@ -16,4 +16,10 @@
    else{
       echo"<script>alert('Error');</script>";
    }
+
+   function edit_account($id,$organization,$first_name,$last_name,$codename,$display_picture,$address,$municipality){
+      $query = "update accounts set organization=$organization,first_name=$first_name,last_name=$last_name,codename=$codename,display_picture=$display_picture,address=$address,municipality=$municipality where id=$id";
+
+      mysqli_query($conn,$query);
+   }
 ?>
