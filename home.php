@@ -1,6 +1,9 @@
 <?php include('connection.php');include('session.php'); ?>
 <!DOCTYPE HTML>
+<<<<<<< HEAD
 	
+=======
+>>>>>>> f35903894c087895c0d3ae04ca80c909a8e2b04b
 <html>
 
 <head>
@@ -13,6 +16,7 @@
 	padding: 0px auto;
 }
 
+<<<<<<< HEAD
 
 	body {
 		width: 100%;
@@ -257,6 +261,16 @@
 
 @media only screen and (min-width: 720px) and (min-height: 1280px) and (orientation: portrait){
 	
+=======
+@media only screen and (min-width: 540px) and (min-height: 960px) and (orientation: portrait){
+	body {
+		width: 100%;
+		font-family: arial;
+	}
+
+}
+
+>>>>>>> f35903894c087895c0d3ae04ca80c909a8e2b04b
 
 	body {
 		width: 100%;
@@ -264,7 +278,11 @@
 	}
 
 	.main-container{
+<<<<<<< HEAD
 		width: 80%;
+=======
+		width: 40%;
+>>>>>>> f35903894c087895c0d3ae04ca80c909a8e2b04b
 		clear: both;
 		text-align: center;
 		background-color: white;
@@ -272,7 +290,11 @@
 	}
 
 	.header {
+<<<<<<< HEAD
 		height: 60px;
+=======
+		height: 50px;
+>>>>>>> f35903894c087895c0d3ae04ca80c909a8e2b04b
 		background-color: rgb(80,80,80);
 		width: 100%;
 		float: left;
@@ -283,7 +305,10 @@
 		float: right;
 		margin: 3.5%;
 		text-align: right;
+<<<<<<< HEAD
 		margin-bottom: 10%;
+=======
+>>>>>>> f35903894c087895c0d3ae04ca80c909a8e2b04b
 	}
 
 	.selection a {
@@ -300,6 +325,7 @@
 
 	}
 
+<<<<<<< HEAD
 	.selection a:hover{
 		background-color: #0072bd;
 	}
@@ -307,6 +333,11 @@
 	.form-content {
 		width: 80%;
 		background-color: #f2f2f2;
+=======
+	.form-content {
+		width: 80%;
+		background-color: rgb(200,200,200);
+>>>>>>> f35903894c087895c0d3ae04ca80c909a8e2b04b
 		overflow: auto;
 		padding: 5%;
 		margin: 5%;
@@ -327,7 +358,11 @@
 		text-align: left;
 	}
 
+<<<<<<< HEAD
 	.form-content label {
+=======
+	.form-content td {
+>>>>>>> f35903894c087895c0d3ae04ca80c909a8e2b04b
 
 	}
 
@@ -387,7 +422,12 @@
 
 
 	.unresolve-forum #procut {
+<<<<<<< HEAD
 	  width: 10%;
+=======
+	  width: 19%;
+	  height: 19%;
+>>>>>>> f35903894c087895c0d3ae04ca80c909a8e2b04b
 	  position: relative;
 	  overflow: hidden;
 	  border-radius: 8px;
@@ -462,6 +502,7 @@
 		float: right;
 	}
 
+<<<<<<< HEAD
 	.header img {
 		width: 15%;
 		margin-left: -20%;
@@ -488,6 +529,8 @@
 
 
 
+=======
+>>>>>>> f35903894c087895c0d3ae04ca80c909a8e2b04b
 
 </style>
 </head>
@@ -495,6 +538,7 @@
 <body>
 	<div class="main-container">
 			<div class="header">
+<<<<<<< HEAD
 				<div class="profilecutter">
 					<img src="img/default.jpg">
 				</div>
@@ -510,11 +554,29 @@
 
 			<div class="form-content">
 				<form action="upload.php" method="POST" entype="multipart/form-data">
+=======
+				<button></button>
+				<img src="">
+			</div>
+
+			<div class="selection">
+				<a href="">FORUM</a>
+				<a href="">RESOLVE</a>
+				<a href="">SIMULATE</a>
+			</div>
+
+			<div class="form-content">
+				<form action="" method="POST" entype="multipart/form-data">
+>>>>>>> f35903894c087895c0d3ae04ca80c909a8e2b04b
 					<h1>PROBLEM | FOREST</h1>
 					<table>
 						<tr>
 							<td><label>Add Photo Video: </label></td>
+<<<<<<< HEAD
 							<td><input type="file" name="image" ></td>
+=======
+							<td><input type="file" name="uploaded-img-vid" ></td>
+>>>>>>> f35903894c087895c0d3ae04ca80c909a8e2b04b
 						</tr>
 
 						<tr>
@@ -551,6 +613,7 @@
 			<div class="unresolve-forum">
 				<h1>MY PROBLEMS (UNRESOLVED)</h1>
 
+<<<<<<< HEAD
 				<?php
 					$viewquery = "select accounts.first_name,accounts.id,accounts.last_name,problem.date_uploaded,problem.id as problem_id,problem.description,problem.category,problem.location,problem.nearby_landmarks from accounts inner join problem where accounts.id=problem.account_id;";
 					$viewresult = mysqli_query($conn,$viewquery);
@@ -622,6 +685,7 @@
 				<?php
 					}
 				?>
+=======
 				<div class="selection-forum-content">
 					<div id="procut">
 					<img id="propic" src="img/logomuna.jpg" >
@@ -642,10 +706,52 @@
 					</div>
 
 					<div class="picturetake">
+					<img src="img/logomuna.jpg">
+					</div>
+					</div>
+
+
+
+				</div>
+
+			</div>
+
+			<div class="unresolve-forum">
+
+>>>>>>> f35903894c087895c0d3ae04ca80c909a8e2b04b
+				<div class="selection-forum-content">
+					<div id="procut">
+					<img id="propic" src="img/logomuna.jpg" >
+					</div>
+					<div class="right-info">
+						<div class="infos">
+					<p id = "name">Aldwin B. Labrador</p>
+					<p id = "date">August 26, 2016</p>
+					<p id = "message">May mga nagpuputol po ng halaman dito samen huhu, pahelp naman pooo.</p>
+
+					<div class="info-content">
+						<span>Category: Illegal Logging</span>
+						<span>Location: Manila City</span>
+						<span>Nearby Landmark: 711</span>	
+					</div>
+
+					<p id = "com">3 Comments</p>
+					</div>
+
+					<div class="picturetake">
+<<<<<<< HEAD
 					<img src="img/before.jpg" width="90%" style="margin-left:20px">
 					</div>
 					</div>
 
+=======
+					<img src="img/logomuna.jpg">
+					</div>
+					</div>
+
+
+
+>>>>>>> f35903894c087895c0d3ae04ca80c909a8e2b04b
 				</div>
 
 			</div>
@@ -653,8 +759,30 @@
 	</div>
 
 
+<<<<<<< HEAD
 
 </body>
 
+=======
+</body>
+<?php
+	if(isset($_POST['btnLogout'])){
+		session_unset();session_destroy();
+		echo("<script>window.location='login.php';</script>");
+	}
+	if(isset($_POST['btnSubmit'])){
+	include('php_raw/add_problem_php.php');
+	include('connection.php');
+	$category = $_POST['cat'];
+	$location = $_POST['loc'];
+	$description = $_POST['des'];
+	$name_place = $_POST['loc'];
+	$nearby_landmarks = $_POST['NL'];
+	$photo = $_POST['uploaded-img-vid'];
+	$photo_date = $_POST['date'];
+	add_problem($category,$location,$description,$name_place,$nearby_landmarks,$photo,$photo_date,$_SESSION['user_id']);
+	}
+?>
+>>>>>>> f35903894c087895c0d3ae04ca80c909a8e2b04b
 
 </html>

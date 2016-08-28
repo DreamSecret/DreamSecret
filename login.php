@@ -1,6 +1,5 @@
-<<<<<<< HEAD
 <!DOCTYPE HTML>
-<?php include('connection.php');session_start(); ?>	
+<?php include('connection.php');session_start(); ?>
 <html>
 
 <head>
@@ -103,6 +102,8 @@
 		width: 100%;
 		clear: both;
 		text-align: center;
+
+
 	}
 
 	img {
@@ -171,23 +172,10 @@
 }
 
 </style>
-=======
-<!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-
-	<?php  include('php/style.php'); ?>
-
-		<link rel="stylesheet" type="text/css" href="css/style.css"></link>
-
-
->>>>>>> f35903894c087895c0d3ae04ca80c909a8e2b04b
 </head>
 
 <body>
 
-<<<<<<< HEAD
 	<?php 
 		if (!isset($_POST['login'])) {
 					
@@ -197,11 +185,11 @@
 	?>
 	
 	<div class="main-container">
-		<img src="img/logo.png">
+		<img src="img/logomuna.jpg">
 		<div class="form-contain">
 			<form method="POST" action="">
 				<label>Ranger Name:</label>
-				<input type="text" name="rname">
+				<input type="text" name="rname" placeholder="Your last name">
 				<label>Password:</label>
 				<input type="password" name="pass">
 				<p><?php //echo $warning; ?></p>
@@ -229,7 +217,7 @@ if(isset($_POST['login'])){
 	$warning="";
 	$name = $_POST['rname'];
 	$pass = $_POST['pass'];
-
+	
 	$query = "select * from accounts where last_name='$name' and password='$pass'";
 	$queryres = mysqli_query($conn,$query);
 
@@ -241,14 +229,13 @@ if(isset($_POST['login'])){
 	else{
 		echo("<script>alert('Wrong Username or Password');</script>");
 	}
+	/*if(($name == "patrick") && ($pass == "pass")){
+		$warning = "Success!";
+	}
 
-	// if(($name == "patrick") && ($pass == "pass")){
-	// 	$warning = "Success!";
-	// }
-
-	// else{
-	// 	$warning = "* Wrong Password of Username";
-	// }
+	else{
+		$warning = "* Wrong Password of Username";
+	}*/
 
 
 }else if(isset($_POST['reg'])){
@@ -256,38 +243,3 @@ if(isset($_POST['login'])){
 }
 
 ?>
-=======
-	<div class="row">
-
-		<div class="col-xs-12">
-
-		</div>
-
-		<div class="col-xs-2">
-
-		</div>
-
-		<div class="col-xs-8 black-box">
-			<form>
-			  <div class="form-group">
-			    <label for="exampleInputEmail1">Ranger Name:</label>
-			    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-			  </div>
-			  <div class="form-group">
-			    <label for="exampleInputPassword1">Password:</label>
-			    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-			  </div>
-		
-			  <button type="submit" class="btn btn-success btn-block">Login</button>
-			</form>
-	</div>
-		</div>
-
-	<div class="col-xs-2">
-
-	</div>
-
-</body>
-
-</html>
->>>>>>> f35903894c087895c0d3ae04ca80c909a8e2b04b

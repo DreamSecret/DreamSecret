@@ -12,13 +12,18 @@
 	padding: 0px auto;
 }
 
+<<<<<<< HEAD
 
 
+=======
+@media only screen and (min-width: 540px) and (min-height: 960px) and (orientation: portrait){
+>>>>>>> f35903894c087895c0d3ae04ca80c909a8e2b04b
 	body {
 		width: 100%;
 		font-family: arial;
 	}
 
+<<<<<<< HEAD
 	.main-container{
 		width: 40%;
 		clear: both;
@@ -325,6 +330,10 @@
 
 @media only screen and (min-width: 540px) and (min-height: 960px) and (orientation: portrait){
 	
+=======
+}
+
+>>>>>>> f35903894c087895c0d3ae04ca80c909a8e2b04b
 
 	body {
 		width: 100%;
@@ -332,7 +341,11 @@
 	}
 
 	.main-container{
+<<<<<<< HEAD
 		width: 80%;
+=======
+		width: 40%;
+>>>>>>> f35903894c087895c0d3ae04ca80c909a8e2b04b
 		clear: both;
 		text-align: center;
 		background-color: white;
@@ -340,7 +353,11 @@
 	}
 
 	.header {
+<<<<<<< HEAD
 		height: 60px;
+=======
+		height: 50px;
+>>>>>>> f35903894c087895c0d3ae04ca80c909a8e2b04b
 		background-color: rgb(80,80,80);
 		width: 100%;
 		float: left;
@@ -351,7 +368,10 @@
 		float: right;
 		margin: 3.5%;
 		text-align: right;
+<<<<<<< HEAD
 		margin-bottom: 10%;
+=======
+>>>>>>> f35903894c087895c0d3ae04ca80c909a8e2b04b
 	}
 
 	.selection a {
@@ -381,7 +401,11 @@
 
 	.resolve-main {
 		overflow: auto;
+<<<<<<< HEAD
 		background-color: #f2f2f2;
+=======
+		background-color: rgb(200,200,200);
+>>>>>>> f35903894c087895c0d3ae04ca80c909a8e2b04b
 		width: 90%;
 		padding: 5%;
 		text-align: center;
@@ -547,6 +571,10 @@
 		width: 80%;
 		padding: 5%;
 		float: right;
+<<<<<<< HEAD
+=======
+		background-color: rgb(200,200,200);
+>>>>>>> f35903894c087895c0d3ae04ca80c909a8e2b04b
 		border-radius: 8px;
 	}
 
@@ -606,6 +634,7 @@
 		border-bottom: 1px solid;
 		
 	}
+<<<<<<< HEAD
 
 	.header img {
 		width: 15%;
@@ -632,12 +661,15 @@
 	}
 
 }
+=======
+>>>>>>> f35903894c087895c0d3ae04ca80c909a8e2b04b
 </style>
 </head>
 
 <body>
 	<div class="main-container">
 			<div class="header">
+<<<<<<< HEAD
 					<div class="profilecutter">
 					<img src="img/default.jpg">
 				</div>
@@ -649,6 +681,16 @@
 				<a href="home.php">FORUM</a>
 				<a href="resolved.php" style="background-color:#0072bd">RESOLVE</a>
 				<a href="php/simulate.php">SIMULATE</a>
+=======
+				<button></button>
+				<img src="">
+			</div>
+
+			<div class="selection">
+				<a href="">FORUM</a>
+				<a href="">RESOLVE</a>
+				<a href="">SIMULATE</a>
+>>>>>>> f35903894c087895c0d3ae04ca80c909a8e2b04b
 			</div>
 
 			<div class="contain-resolve">
@@ -659,13 +701,21 @@
 
 						<div id="leftside">
 							<label>Before</label>
+<<<<<<< HEAD
 							<img src="img/after.jpg">
+=======
+							<img src="img/kemepic.jpg">
+>>>>>>> f35903894c087895c0d3ae04ca80c909a8e2b04b
 							<p>Date Taken: </p><p>August 27, 2016</p>
 						</div>
 						
 						<div id="rightside">
 							<label>After</label>
+<<<<<<< HEAD
 							<img src="img/before.jpg">
+=======
+							<img src="img/kemepic.jpg">
+>>>>>>> f35903894c087895c0d3ae04ca80c909a8e2b04b
 							<p>Date Taken: </p><p>August 21, 2016</p>
 						</div>
 							
@@ -674,7 +724,11 @@
 					
 					<div class="senders-info">
 						<div id="procut">
+<<<<<<< HEAD
 						<img id="propic" src="img/default.jpg" >
+=======
+						<img id="propic" src="img/logomuna.jpg" >
+>>>>>>> f35903894c087895c0d3ae04ca80c909a8e2b04b
 						</div>
 						<div class="complaint">
 							<p id = "name">Aldwin B. Labrador</p>
@@ -695,7 +749,11 @@
 					<div class="comments">
 					<div class="comment">
 						<div id="procut">
+<<<<<<< HEAD
 						<img id="propic" src="img/default.jpg" >
+=======
+						<img id="propic" src="img/logomuna.jpg" >
+>>>>>>> f35903894c087895c0d3ae04ca80c909a8e2b04b
 						</div>
 						<div class="complaint">
 							<p id = "name">Aldwin B. Labrador</p>
@@ -706,7 +764,11 @@
 
 					<div class="comment">
 						<div id="procut">
+<<<<<<< HEAD
 						<img id="propic" src="img/default.jpg" >
+=======
+						<img id="propic" src="img/logomuna.jpg" >
+>>>>>>> f35903894c087895c0d3ae04ca80c909a8e2b04b
 						</div>
 						<div class="complaint">
 							<p id = "name">Aldwin B. Labrador</p>
@@ -718,7 +780,11 @@
 
 					<div class="comment">
 						<div id="procut">
+<<<<<<< HEAD
 						<img id="propic" src="img/default.jpg" >
+=======
+						<img id="propic" src="img/logomuna.jpg" >
+>>>>>>> f35903894c087895c0d3ae04ca80c909a8e2b04b
 						</div>
 						<div class="complaint">
 							<p id = "name">Aldwin B. Labrador</p>
@@ -735,7 +801,11 @@
 			</div>
 			<div class="person-solve">
 						<div id="solvecut">
+<<<<<<< HEAD
 						<img id="solvepic" src="img/female.png" >
+=======
+						<img id="solvepic" src="img/logomuna.jpg" >
+>>>>>>> f35903894c087895c0d3ae04ca80c909a8e2b04b
 						</div>
 						<span>Resolved by</span>
 						<p>Rosel Ann Aba</p>

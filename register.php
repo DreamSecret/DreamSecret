@@ -1,5 +1,9 @@
 <!DOCTYPE HTML>
+<<<<<<< HEAD
 <?php include('connection.php'); ?>	
+=======
+<?php include('connection.php');?>	
+>>>>>>> f35903894c087895c0d3ae04ca80c909a8e2b04b
 <html>
 
 <head>
@@ -163,7 +167,11 @@ body {
 <body>
 	
 	<div class="main-container">
+<<<<<<< HEAD
 		<img src="img/logo.png">
+=======
+		<img src="img/logomuna.jpg">
+>>>>>>> f35903894c087895c0d3ae04ca80c909a8e2b04b
 		<div class="form-contain">
 			<form method="POST" action="" entype="multipart/form-data">
 				<label>Organization:</label>
@@ -200,7 +208,11 @@ body {
 
 </html>
 
+<<<<<<< HEAD
 <?php 
+=======
+<?php
+>>>>>>> f35903894c087895c0d3ae04ca80c909a8e2b04b
 	echo("<script>alert('202');</script>");
 	if(isset($_POST['reg'])){
 	echo("<script>alert('203');</script>");
