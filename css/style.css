@@ -1,0 +1,209 @@
+
+/*use for creating space*/
+.spacer1{
+	height: 10px;
+}
+.spacer2{
+	height: 20px;
+}
+.spacer3{
+	height: 30px;
+}
+.spacer4{
+	height: 40px;
+}
+.spacer5{
+	height: 50px;
+}
+.spacer6{
+	height: 60px;
+}
+.spacer7{
+	height: 70px;
+}
+.spacer8{
+	height: 80px;
+}
+.spacer9{
+	height: 90px;
+}
+.spacer10{
+	height: 100px;
+}
+.spacer50{
+	height: 500px;
+}
+
+
+.remove-padding{
+	padding: 0px;
+}
+
+.remove-padding-right{
+	padding-right: 0px;
+}
+.remove-padding-left{
+	padding-left: 0px;
+}
+.remove-padding-rl{
+	padding: 10px 0px;
+}
+.remove-padding-bottom{
+	padding-bottom: 0px;
+}
+.remove-padding-top{
+	padding-top: 0px;
+}
+
+.remove-margin-bot{
+	margin-bottom: 0px;
+}
+
+.remove-border-radius:{
+	border-radius: 0px;
+}
+
+
+.add-padding-tb{
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.add-padding-top{
+	padding-top: 15px;
+}
+.add-padding-topx2{
+	padding-top: 30px;
+}
+.add-padding-bot{
+	padding-bottom: 15px;
+}
+
+
+.font-def{
+	font-family: "Arial";
+}
+
+.font-bold{
+	font-style: bold;
+
+}
+
+.black-box {
+	border-radius: 6px;
+	background-color: rgba(1,1,1,.75);
+	padding: 20px;
+	color: white;
+}
+
+.gray-box {
+	border-radius: 6px;
+	background-color: rgba(1,1,1,.20);
+	padding: 20px;
+	color: black;
+}
+
+.text-center {
+	text-align: center;
+}
+
+#div1 {
+    width: 350px;
+    height: 70px;
+    padding: 10px;
+    border: 1px solid #aaaaaa;
+}
+
+.border{
+	border: 1px solid black;
+}
+
+
+/////--=========///////
+
+
+
+*{
+	margin: 0px auto !important;
+	padding: 0px auto !important;
+}
+
+
+
+	body {
+		width: 100%;
+		font-family: arial;
+	}
+
+	.main-container{
+		width: 40%;
+		clear: both;
+		text-align: center;
+		background-color: white;
+		padding-bottom: 60px;
+	}
+
+	.header {
+		height: 50px;
+		background-color: rgb(80,80,80);
+		width: 100%;
+		float: left;
+	}
+
+	.selection {
+		width: 93%;
+		float: right;
+		margin: 3.5%;
+		text-align: right;
+	}
+
+	.selection a {
+		width: 100px;
+		padding: 10px;
+		border-radius: 8px;
+		border:transparent;
+		background-color: rgb(0,175,80);
+		text-decoration: none;
+		color: white;
+		font-size: 18px;
+		padding-left: 20px;
+		padding-right: 20px;
+
+	}
+
+	.panel {
+
+		width: 90%;
+		margin: 5%;
+		overflow: auto;
+
+	}
+
+	.panel .left-panel {
+		width: 20%;
+		height: 500px;
+		float: left;
+		background-color: rgb(200,200,200);
+	}
+
+	.panel .right-panel {
+		width: 78%;
+		height: 500px;
+		float: right;
+		border: 1px solid;
+	}
+
+	.buttons {
+		float: left;
+		width: 100%;
+		text-align: right;
+		padding-top: 10px;
+	}
+
+	.buttons button {
+		border-radius: 8px;
+		border: 1px solid;
+		background-color: white;
+		padding: 10px;
+		width: 190px;
+		cursor: pointer;
+	}

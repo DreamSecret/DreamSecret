@@ -1,0 +1,17 @@
+<form action="Insert_products.php" method="POST" enctype="multipart/form-data" target="send" id="form">
+<label id="label">Picture</label></td><td> : </td><td><input type="file" name="image">
+</form>
+
+
+
+$file_name=$_FILES["image"]["name"];
+    $temp_name=$_FILES["image"]["tmp_name"];
+    $imgtype=$_FILES["image"]["type"];
+    $ext= GetImageExtension($imgtype);
+    $imagename=$_FILES["image"]["name"];
+    $target_path = "/Software project/website/images-data/".$imagename;
+    $path="/xampp/htdocs/";
+
+if(move_uploaded_file($temp_name,$path.$target_path)) {
+	$sql = "";
+}
